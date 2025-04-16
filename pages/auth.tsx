@@ -1,7 +1,6 @@
 import Input from "@/components/Input";
 import { useCallback, useState } from "react";
 import axios from "axios";
-import { log } from "console";
 
 const Auth = () => {
   // 表單狀態
@@ -19,7 +18,7 @@ const Auth = () => {
     );
   }, []);
 
-  // 註冊
+  //
   const register = useCallback(async () => {
     try {
       await axios.post("/api/register", {
