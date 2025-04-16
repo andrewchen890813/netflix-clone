@@ -21,7 +21,7 @@ export default NextAuth({
       },
       //   驗證
       async authorize(credentials) {
-        // 是否填入Email及Password
+        // 是否有填入Email及Password
         if (!credentials?.email || !credentials?.password) {
           throw new Error("Email and Password required");
         }
